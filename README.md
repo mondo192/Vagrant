@@ -4,4 +4,9 @@
 * HashiCorp Discuss: https://discuss.hashicorp.com/c/vagrant/24
 
 ## Quick Start
-
+To build the virtual environment:
+```
+vagrant init ubuntu/bionic64
+vagrant up
+vagrant ssh
+````
