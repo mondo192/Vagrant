@@ -10,3 +10,7 @@ vagrant init ubuntu/bionic64
 vagrant up
 vagrant ssh
 ````
+To shutdown the virtual envirnoment and deallocate used disk space:
+```
+vagrant destroy -f
+```
