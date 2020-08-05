@@ -1,2 +1,2 @@
 # Vagrant
-* Website: (https://www.vagrantup.com/)
+* Website: https://www.vagrantup.com/
