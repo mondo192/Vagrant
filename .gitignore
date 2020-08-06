@@ -2,7 +2,7 @@
 acceptance_config.yml
 boxes/*
 /.vagrant
-*.log
+ubuntu-bionic-18.04-cloudimg-console.log
 /website/.vagrant
 /website/build
 /vagrant-spec.config.rb
