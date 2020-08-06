@@ -15,7 +15,7 @@ To shutdown the virtual envirnoment and deallocate used disk space:
 vagrant destroy -f
 ```
 
-To generate a ssh key associated with an email address when building the envirnoment simple pass Vagrant the EMAIL arguement. If not provided, no ssh key is generated. 
+To generate a ssh key associated with an email address, simply pass Vagrant the EMAIL argument. If no arguement is provided, no ssh key is generated. 
 ```
 EMAIL="your-email@mail.com" vagrant up
 ```
