@@ -51,14 +51,10 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI when booting the machine
     vb.gui = false
-<<<<<<< HEAD
-=======
- 
->>>>>>> 1058c84ba68c3d679dc50f39fd77ce67ed3c125d
     # Customize the amount of memory on the VM:
     vb.memory = "1024"
-	# Customize the number of cpu cores for the VM:
-	vb.cpus = "4"
+    # Customize the number of cpu cores for the VM:
+    vb.cpus = "4"
   end
 
   # View the documentation for the provider you are using for more
@@ -67,10 +63,5 @@ Vagrant.configure("2") do |config|
   # Enable provisioning with a shell script. Additional provisioners such as
   # Ansible, Chef, Docker, Puppet and Salt are also available. Please see the
   # documentation for more information about their specific syntax and use.
-<<<<<<< HEAD
   config.vm.provision "shell", privileged: false, path: "vagrant.sh", args: ["#{ENV["EMAIL"]}"]
-    
-=======
-  config.vm.provision "shell", path: "setup.sh", args: "#{ARGV[0]}"
->>>>>>> 1058c84ba68c3d679dc50f39fd77ce67ed3c125d
 end
