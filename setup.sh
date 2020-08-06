@@ -4,7 +4,7 @@
 sudo apt-get update && sudo apt-get -y upgrade
 sudo apt-get autoremove && sudo apt-get autoclean
 
-# Generate a public/private keypair from cmd line arguement
+# Generate a public/private keypair from cmd line argument
 if [ "$1" ]; then
 	echo "Creating public/private keypair for $1"
 	ssh-keygen -q -t rsa -b 4096 -C $1 -N "" <<< ""$'\n'"y" 2>&1 >/dev/null
