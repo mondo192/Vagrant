@@ -14,3 +14,8 @@ To shutdown the virtual envirnoment and deallocate used disk space:
 ```
 vagrant destroy -f
 ```
+
+To generate a ssh key when building the envirnoment by passing an envirnoment variable into vagrant
+```
+EMAIL="your-email@mail.com" vagrant up
+```
