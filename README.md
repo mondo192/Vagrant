@@ -18,4 +18,4 @@ To generate a ssh key associated with a token, simply pass Vagrant the TOKEN arg
 ```
 TOKEN="your_token" vagrant up
 ```
-To create a new token go to your profile > Settings > Developer settings > Personal access tokens > Generate new token
+To create a new token go to your profile > Settings > Developer settings > Personal access tokens > Generate new token and check the box for admin:public_key
