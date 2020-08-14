@@ -3,18 +3,18 @@
 PASSWORD='12345678'
 
 # Upgrade and upgrade 
-sudo apt-get update
-sudo apt-get -y upgrade
+sudo apt-get update && \ 
+sudo apt-get -y --with-new-pkgs upgrade && \
+sudo apt-get -y autoremove && sudo apt-get autoclean
 
 # Install apache and php
-sudo apt-get -y install httpd
-sudo apt-get -y install php7.4.9
+sudo apt-get -y install apache2 php7.4
 
 # Setup hosts file
 VHOST=$(cat <<EOF
 <VirtualHost *:80>
     DocumentRoot "/var/www/html/class"
-	<Directory  "var/www/html/class">  
+	<Directory  "/var/www/html/class">  
 	    AllowOveride All
 		Require all granted
 	</Directory>
@@ -27,4 +27,4 @@ echo "${HOST}" > /etc/apache2/sites-available/000-default.conf
 sudo a2enmod rewrite
 
 # Restart apache service
-service apache2 restart
+systemctl restart apache2
